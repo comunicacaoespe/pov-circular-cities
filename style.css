@@ -392,3 +392,5 @@ p { margin: 0; }
   .gantt.anim .g-bar, .result:nth-child(n), .value svg, .menu-btn span, .menu-btn span::before, .menu-btn span::after { transition: none; }
   .result:hover, .value:hover svg { transform: none; }
 }
+
+@media (max-width: 720px) { .menu-btn { display: inline-flex; } }
