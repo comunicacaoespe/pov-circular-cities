@@ -122,7 +122,7 @@
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
-    document.querySelectorAll(".section-head, .objective, .partner, .fact, .challenge-copy, .step, .tl-row").forEach(function (el, i) {
+    document.querySelectorAll(".section-head, .objective, .partner, .fact, .challenge-copy, .value").forEach(function (el, i) {
       if (el.getBoundingClientRect().top < vh) return;
       el.classList.add("reveal");
       el.style.setProperty("--d", ((i % 3) * 70) + "ms");
@@ -149,4 +149,32 @@
     es.forEach(function (e) { if (e.isIntersecting) set(items.indexOf(e.target)); });
   }, { rootMargin: "-42% 0px -50% 0px" });
   items.forEach(function (li) { spy.observe(li); });
+})();
+
+
+/* Mobile menu + timeline draw-in */
+(function () {
+  "use strict";
+  var btn = document.querySelector(".menu-btn"), nav = document.getElementById("site-nav");
+  if (btn && nav) {
+    var close = function () { nav.classList.remove("is-open"); btn.setAttribute("aria-expanded", "false"); };
+    btn.addEventListener("click", function () {
+      var open = nav.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.addEventListener("click", function (e) { if (e.target.closest("a")) close(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+    window.addEventListener("resize", function () { if (window.innerWidth > 720) close(); });
+  }
+
+  var g = document.querySelector(".gantt");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!g || reduce || !("IntersectionObserver" in window)) return;
+  if (g.getBoundingClientRect().top < window.innerHeight) return;
+  g.querySelectorAll(".g-bar").forEach(function (b, i) { b.style.setProperty("--i", i); });
+  g.classList.add("anim");
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { g.classList.add("in"); io.disconnect(); } });
+  }, { threshold: 0.15 });
+  io.observe(g);
 })();
