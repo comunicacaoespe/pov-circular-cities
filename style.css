@@ -295,3 +295,7 @@ p { margin: 0; }
 .lang button:focus-visible { outline: 2px solid var(--ink); }
 @media (max-width: 720px) { .lang { padding-bottom: 4px; } }
 @media (prefers-reduced-motion: reduce) { .lang button { transition: none; } }
+
+/* Partner logos */
+.p-logo { height: 88px; display: flex; align-items: center; margin-bottom: 14px; }
+.p-logo img { height: 100%; width: auto; max-width: 220px; object-fit: contain; }
