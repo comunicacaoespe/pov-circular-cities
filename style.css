@@ -394,3 +394,8 @@ p { margin: 0; }
 }
 
 @media (max-width: 720px) { .menu-btn { display: inline-flex; } }
+@media (max-width: 720px) {
+  .lang { gap: 4px; margin-left: auto; }
+  .lang button { width: 26px; height: 19px; }
+  .site-header .wrap { flex-wrap: wrap; }
+}
