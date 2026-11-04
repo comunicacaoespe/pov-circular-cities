@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POV: Circular Cities</title>
+<meta name="description" content="POV: Circular Cities is an Erasmus+ youth project that helps young people and youth workers sort, repair, reuse and recycle better in their cities, with a gamified app and an interactive recycling map.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%234ABD17' stroke-width='10' stroke-dasharray='90 86'/%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23E6D711' stroke-width='10' stroke-dasharray='86 90' stroke-dashoffset='-90'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Poppins:wght@400;500;600&family=Commissioner:wght@500;600;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="POV: Circular Cities, home" data-i18n-attr="aria-label:a.brand"><img src="assets/pov-logo.webp" alt="POV Circular Cities. Seeing urban recycling through a new lens" data-i18n-attr="alt:a.logo" width="440" height="231"></a>
+    <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:a.nav">
+      <a href="#challenge" data-i18n="nav.challenge">The challenge</a>
+      <a href="#app" data-i18n="nav.app">The app</a>
+      <a href="#results" data-i18n="nav.results">Results</a>
+      <a href="#timeline" data-i18n="nav.timeline">Timeline</a>
+      <a class="cta" href="#partners" data-i18n="nav.partners">Partners</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:a.lang">
+      <button type="button" data-lang="en" title="English" aria-label="English" aria-pressed="true"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M0 0l30 20M30 0L0 20" stroke="#C8102E" stroke-width="1.6"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3.4"/></svg></button>
+      <button type="button" data-lang="pl" title="Polski" aria-label="Polski" aria-pressed="false"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg></button>
+      <button type="button" data-lang="el" title="Ελληνικά" aria-label="Ελληνικά" aria-pressed="false"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#0D5EAF"/><g fill="#fff"><rect y="2.22" width="30" height="2.22"/><rect y="6.67" width="30" height="2.22"/><rect y="11.11" width="30" height="2.22"/><rect y="15.56" width="30" height="2.22"/></g><rect width="11.11" height="11.11" fill="#0D5EAF"/><rect x="4.44" width="2.22" height="11.11" fill="#fff"/><rect y="4.44" width="11.11" height="2.22" fill="#fff"/></svg></button>
+      <button type="button" data-lang="pt" title="Português" aria-label="Português" aria-pressed="false"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#006600"/><circle cx="12" cy="10" r="3.8" fill="#FFE000"/><path d="M10.1 8h3.8v3.1a1.9 1.9 0 0 1-3.8 0z" fill="#fff" stroke="#C00" stroke-width=".8"/></svg></button>
+      <button type="button" data-lang="hr" title="Hrvatski" aria-label="Hrvatski" aria-pressed="false"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="6.67" fill="#FF0000"/><rect y="6.67" width="30" height="6.67" fill="#fff"/><rect y="13.33" width="30" height="6.67" fill="#171796"/><path d="M12.6 7.2h4.8v3.6c0 1.7-1.3 2.6-2.4 3-1.1-.4-2.4-1.3-2.4-3z" fill="#fff" stroke="#C00" stroke-width=".6"/><g fill="#FF0000"><rect x="12.6" y="7.2" width="1.2" height="1.2"/><rect x="15.0" y="7.2" width="1.2" height="1.2"/><rect x="13.8" y="8.4" width="1.2" height="1.2"/><rect x="16.2" y="8.4" width="1.2" height="1.2"/><rect x="12.6" y="9.6" width="1.2" height="1.2"/><rect x="15.0" y="9.6" width="1.2" height="1.2"/></g></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Erasmus+ youth project · 2026 to 2028</p>
+      <h1 data-i18n="hero.h1">Seeing urban recycling through a <span class="accent-y">new lens</span></h1>
+      <p class="lead" data-i18n="hero.lead">POV helps young people and youth workers sort waste correctly, repair and reuse more, and find the nearest recycling point in their own city. It does this with AI-supported video tutorials, a game, and an interactive map.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#app" data-i18n="hero.btn1">Try the sorting demo</a>
+        <a class="btn" href="#partners" data-i18n="hero.btn2">Meet the partners</a>
+      </div>
+      <ul class="hero-badges" aria-label="Project at a glance" data-i18n-attr="aria-label:a.badges">
+        <li data-i18n="hero.badge1">Poland · Greece · Portugal · Croatia</li>
+        <li data-i18n="hero.badge2">For youth workers and young people</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <svg class="ring" viewBox="0 0 400 400" aria-hidden="true">
+        <circle cx="200" cy="200" r="186" fill="none" stroke="#4ABD17" stroke-width="14" stroke-dasharray="560 610" stroke-linecap="round"/>
+        <circle cx="200" cy="200" r="186" fill="none" stroke="#E6D711" stroke-width="14" stroke-dasharray="470 700" stroke-dashoffset="-640" stroke-linecap="round"/>
+      </svg>
+      <div class="card"><img src="assets/pov-logo.webp" alt="POV Circular Cities logo: the letters P and V frame a recycling loop around a green city skyline" data-i18n-attr="alt:a.logo.hero" width="440" height="231"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<section class="facts" aria-label="Project facts" data-i18n-attr="aria-label:a.facts">
+  <div class="wrap">
+    <dl>
+      <div class="fact"><dt data-i18n="fact.dur.t">Duration</dt><dd data-i18n="fact.dur.v">24 months<small>September 2026 to August 2028</small></dd></div>
+      <div class="fact"><dt data-i18n="fact.prog.t">Programme</dt><dd data-i18n="fact.prog.v">Erasmus+ KA220-YOU<small>Cooperation partnership in youth</small></dd></div>
+      <div class="fact"><dt data-i18n="fact.part.t">Partnership</dt><dd data-i18n="fact.part.v">5 organisations<small>Poland (2), Greece, Portugal, Croatia</small></dd></div>
+      <div class="fact"><dt data-i18n="fact.prio.t">Priority</dt><dd data-i18n="fact.prio.v">Environment and climate<small>Digital youth work, new learning methods</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- CHALLENGE -->
+<section class="section" id="challenge">
+  <div class="wrap challenge">
+    <div class="challenge-copy">
+      <p class="eyebrow" data-i18n="nav.challenge">The challenge</p>
+      <h2 data-i18n="ch.h2">Young people care about recycling. Few know how to do it right.</h2>
+      <p class="lead" data-i18n="ch.lead">Cities produce more waste each year, and many residents are unsure what can be recycled, where to take it, or how to sort it. Young people with fewer opportunities have even fewer ways to take part.</p>
+      <div class="big-stat"><strong>513 kg</strong><span data-i18n="ch.stat">of municipal waste per person in the EU in 2022 (Eurostat, as cited in the project application).</span></div>
+    </div>
+    <figure class="bars" style="margin:0">
+      <h3 data-i18n="ch.bars">What the project's own research found</h3>
+      <div class="bar-row"><div class="bar-label"><span data-i18n="ch.b1">Interested in sustainability programmes</span><b>80%</b></div><div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--green)"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span data-i18n="ch.b2">Do not fully understand recycling processes</span><b>70%</b></div><div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--yellow)"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span data-i18n="ch.b3">Limited or no knowledge of how to sort waste</span><b>65%</b></div><div class="bar-track"><div class="bar-fill" style="width:65%;background:var(--yellow)"></div></div></div>
+      <div class="bar-row"><div class="bar-label"><span data-i18n="ch.b4">Only "somewhat aware" of local recycling points</span><b>35%</b></div><div class="bar-track"><div class="bar-fill" style="width:35%;background:var(--blue)"></div></div></div>
+      <figcaption data-i18n="ch.cap">Online survey of more than 200 youth workers, students, educators and NGO staff in Poland, Greece, Portugal and Croatia.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section--sand" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="val.eyebrow">What POV stands for</p>
+      <h2 data-i18n="val.h2">Four ideas behind every activity</h2>
+      <p class="lead" data-i18n="val.lead">The logo joins city, nature and the loop of circular thinking. The same four values guide the learning materials, the app and the events.</p>
+    </div>
+    <div class="values">
+      <article class="value v-green">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 24a16 16 0 0 1 28-10M40 24a16 16 0 0 1-28 10" fill="none" stroke="#10261A" stroke-width="4" stroke-linecap="round"/><path d="M38 6v10H28M10 42V32h10" fill="none" stroke="#10261A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="val.1.h">Circularity</h3><p data-i18n="val.1.p">Cut waste through recycling, repair and reuse.</p>
+      </article>
+      <article class="value v-mint">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M40 8C18 8 8 20 8 34c0 3 1 5 2 6 14 0 30-6 30-32z" fill="none" stroke="#10261A" stroke-width="4" stroke-linejoin="round"/><path d="M10 40C18 28 26 22 34 16" fill="none" stroke="#10261A" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3 data-i18n="val.2.h">Sustainability</h3><p data-i18n="val.2.p">Support environmentally responsible choices, every day.</p>
+      </article>
+      <article class="value v-yellow">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="18" r="6" fill="none" stroke="#10261A" stroke-width="4"/><circle cx="34" cy="18" r="6" fill="none" stroke="#10261A" stroke-width="4"/><path d="M4 40c1-8 6-12 12-12s11 4 12 12M24 40c1-6 4-10 10-10s9 4 10 10" fill="none" stroke="#10261A" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3 data-i18n="val.3.h">Community</h3><p data-i18n="val.3.p">Involve young people, youth workers and local stakeholders.</p>
+      </article>
+      <article class="value v-blue">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="12" width="24" height="24" rx="4" fill="none" stroke="#10261A" stroke-width="4"/><path d="M20 4v8M28 4v8M20 36v8M28 36v8M4 20h8M4 28h8M36 20h8M36 28h8" stroke="#10261A" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3 data-i18n="val.4.h">Innovation</h3><p data-i18n="val.4.p">Make environmental education practical, accessible and engaging.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section class="section" id="objectives">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="obj.eyebrow">Objectives</p>
+      <h2 data-i18n="obj.h2">What the partnership wants to achieve</h2>
+    </div>
+    <ol class="objectives">
+      <li class="objective"><span class="tag">O1</span><p data-i18n="obj.1"><b>Promote repair, reuse and recycling.</b> Give youth workers practical skills to guide young people towards less waste and more sustainable habits.</p></li>
+      <li class="objective"><span class="tag">O2</span><p data-i18n="obj.2"><b>Build digital skills for inclusive learning.</b> Equip youth workers, young people and partner organisations with AI-supported and game-based tools, especially for those with fewer opportunities.</p></li>
+      <li class="objective"><span class="tag">O3</span><p data-i18n="obj.3"><b>Raise youth involvement in local waste management.</b> Young people map recycling points, help shape educational content and drive local waste reduction.</p></li>
+      <li class="objective"><span class="tag">O4</span><p data-i18n="obj.4"><b>Connect sectors and regions.</b> Bring together youth workers, communities, local authorities, waste management companies and educational institutions to create solutions that can scale.</p></li>
+      <li class="objective"><span class="tag">O5</span><p data-i18n="obj.5"><b>Learn through transnational mobility.</b> Build sustainability competences through exchange across countries, with Youthpass recognition for participants.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- APP -->
+<section class="section section--sand" id="app">
+  <div class="wrap app">
+    <div class="app-copy">
+      <p class="eyebrow" data-i18n="nav.app">The app</p>
+      <h2>POV: YOU Sort it Right!</h2>
+      <p class="lead" data-i18n="app.lead">One app to learn what goes where, watch how to repair or reuse, play through real situations and find a recycling point nearby. Try a short round on the phone.</p>
+      <ul class="counts" aria-label="Planned app content" data-i18n-attr="aria-label:a.counts">
+        <li><strong>20</strong><span data-i18n="app.c1">AI-enhanced video tutorials</span></li>
+        <li><strong>20</strong><span data-i18n="app.c2">written guides</span></li>
+        <li><strong>20</strong><span data-i18n="app.c3">local waste sorting guides</span></li>
+        <li><strong>20</strong><span data-i18n="app.c4">gamified challenges</span></li>
+        <li><strong>25</strong><span data-i18n="app.c5">decision-making scenarios</span></li>
+        <li><strong>50+</strong><span data-i18n="app.c6">recycling points mapped across five cities</span></li>
+      </ul>
+      <ul class="feature-list">
+        <li><svg viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="5" width="22" height="16" rx="4" fill="#43A3DD"/><path d="M11 9l6 4-6 4z" fill="#10261A"/></svg><span data-i18n="app.f1"><b>Learn by watching.</b> Step-by-step tutorials on repair, reuse, waste reduction and recycling, in each partner language.</span></li>
+        <li><svg viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="11" fill="#E6D711"/><path d="M8 13l4 4 7-8" fill="none" stroke="#10261A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="app.f2"><b>Learn by playing.</b> Quizzes and simulations on recycling, repair and EU policy, with points and badges.</span></li>
+        <li><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 2a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8z" fill="#4ABD17"/><circle cx="13" cy="10" r="3" fill="#FFFFFF"/></svg><span data-i18n="app.f3"><b>Find it nearby.</b> An interactive map linked to Google Maps shows recycling points, with item-specific sorting guidance.</span></li>
+        <li><svg viewBox="0 0 26 26" aria-hidden="true"><rect x="4" y="3" width="18" height="20" rx="3" fill="#B3FF91" stroke="#10261A" stroke-width="1.6"/><path d="M8 9h10M8 13h10M8 17h6" stroke="#10261A" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="app.f4"><b>Prefer to read?</b> A non-interactive waste reduction guide covers single-use plastics and sustainable habits.</span></li>
+      </ul>
+    </div>
+
+    <div class="phone-wrap">
+      <div class="phone">
+        <div class="screen">
+          <div class="app-bar">YOU Sort it Right! <span data-i18n="app.demo">Demo</span></div>
+          <div class="tabs" role="tablist" aria-label="Demo screens" data-i18n-attr="aria-label:a.tabs">
+            <button class="tab" role="tab" id="tab-sort" aria-selected="true" aria-controls="panel-sort" type="button" data-i18n="app.tab.sort">Sort</button>
+            <button class="tab" role="tab" id="tab-map" aria-selected="false" aria-controls="panel-map" type="button" data-i18n="app.tab.map">Map</button>
+          </div>
+          <div>
+            <div class="panel" id="panel-sort" role="tabpanel" aria-labelledby="tab-sort">
+              <div class="item-card">
+                <svg class="emoji-free" id="item-art" viewBox="0 0 76 76" aria-hidden="true"></svg>
+                <h4 id="item-name">Empty plastic bottle</h4>
+                <p id="item-hint">Drink bottle, rinsed</p>
+              </div>
+              <p class="q" data-i18n="app.q">Where does it go?</p>
+              <div class="bins" id="bins"></div>
+              <div class="feedback" id="feedback" aria-live="polite" role="status"></div>
+              <div class="round-row"><span id="progress"></span><button class="next" id="next" type="button" hidden>Next item</button></div>
+            </div>
+            <div class="panel" id="panel-map" role="tabpanel" aria-labelledby="tab-map" hidden>
+              <div class="map-art">
+                <svg viewBox="0 0 300 300" role="img" aria-label="Illustration of a city map with three recycling points marked" data-i18n-attr="aria-label:a.map">
+                  <rect width="300" height="300" fill="#EAF3E2"/>
+                  <path d="M-10 210C60 190 120 240 200 215S300 170 320 180V320H-10z" fill="#BFE3F6"/>
+                  <g stroke="#FFFFFF" stroke-width="12" fill="none" stroke-linecap="round"><path d="M0 90H300M0 160H300M70 0V300M180 0V300M250 0V140"/></g>
+                  <g fill="#B3FF91" stroke="#4ABD17" stroke-width="2"><rect x="82" y="20" width="86" height="60" rx="8"/><rect x="192" y="98" width="46" height="52" rx="8"/></g>
+                  <g><path d="M72 112a14 14 0 0 1 28 0c0 14-14 28-14 28s-14-14-14-28z" fill="#4ABD17"/><circle cx="86" cy="112" r="5" fill="#fff"/>
+                  <path d="M166 52a14 14 0 0 1 28 0c0 14-14 28-14 28s-14-14-14-28z" fill="#E6D711"/><circle cx="180" cy="52" r="5" fill="#fff"/>
+                  <path d="M196 182a14 14 0 0 1 28 0c0 14-14 28-14 28s-14-14-14-28z" fill="#43A3DD"/><circle cx="210" cy="182" r="5" fill="#fff"/></g>
+                </svg>
+              </div>
+              <p class="map-note" data-i18n="app.mapnote"><b>Recycling points near you.</b> In the real app, tapping a point opens item-specific guidance for your city.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="phone-caption" data-i18n="app.caption">Illustrative demo of the idea. Real sorting rules differ by city, and the app will follow each partner city's local system.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="section" id="results">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="res.eyebrow">Expected results</p>
+      <h2 data-i18n="res.h2">Four results that stay useful after 2028</h2>
+    </div>
+    <div class="results">
+      <article class="result"><span class="tag">R1</span><h3 data-i18n="res.1.h">A pilot-tested app</h3><p data-i18n="res.1.p">AI-driven, gamified content on repair, reuse, recycling and waste reduction, tested with partners, youth workers and young people before launch.</p></article>
+      <article class="result"><span class="tag">R2</span><h3 data-i18n="res.2.h">An interactive recycling map</h3><p data-i18n="res.2.p">Google Maps integration that guides users to local recycling points and gives item-specific sorting instructions in the partner cities.</p></article>
+      <article class="result"><span class="tag">R3</span><h3 data-i18n="res.3.h">Training for youth workers</h3><p data-i18n="res.3.p">A five-day learning mobility in Croatia for 25 youth workers, certified with Youthpass, so they can lead workshops in their own communities.</p></article>
+      <article class="result"><span class="tag">R4</span><h3 data-i18n="res.4.h">Lasting visibility</h3><p data-i18n="res.4.p">Partner coordination, stakeholder engagement, local multiplier events and a sustainability plan that keeps the app and materials alive.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section section--sand" id="timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="nav.timeline">Timeline</p>
+      <h2 data-i18n="tl.h2">Twenty-four months, from research to launch</h2>
+      <p class="lead" data-i18n="tl.lead">Local research comes first. The learning materials follow, then the app, the pilot with youth workers and young people, and the final events.</p>
+    </div>
+    <ul class="legend" aria-label="Work packages" data-i18n-attr="aria-label:a.legend">
+      <li data-i18n="tl.wp2"><i class="wp2"></i>Mapping and action plan</li>
+      <li data-i18n="tl.wp3"><i class="wp3"></i>Educational material and mobility</li>
+      <li data-i18n="tl.wp4"><i class="wp4"></i>App and pilot testing</li>
+      <li data-i18n="tl.wp5"><i class="wp5"></i>Communication and outreach</li>
+    </ul>
+    <div class="gantt">
+      <div class="gantt-inner">
+        <div class="g-head"><div></div><div class="g-years" aria-hidden="true"><span>2026</span><span>2027</span><span>2028</span></div></div>
+        <div class="g-row"><div data-i18n="g.0">Research Points in five cities</div><div class="g-track" role="img" data-a="1" data-b="2"><div class="g-bar wp2" style="left:4.167%;width:8.333%"></div></div></div><div class="g-row"><div data-i18n="g.1">Local insights and infrastructure analysis</div><div class="g-track" role="img" data-a="2" data-b="6"><div class="g-bar wp2" style="left:8.333%;width:20.833%"></div></div></div><div class="g-row"><div data-i18n="g.2">Action plan and tools structure</div><div class="g-track" role="img" data-a="6" data-b="8"><div class="g-bar wp2" style="left:25.000%;width:12.500%"></div></div></div><div class="g-row"><div data-i18n="g.3">Video tutorials and written guides</div><div class="g-track" role="img" data-a="7" data-b="11"><div class="g-bar wp3" style="left:29.167%;width:20.833%"></div></div></div><div class="g-row"><div data-i18n="g.4">Gamified learning content</div><div class="g-track" role="img" data-a="8" data-b="13"><div class="g-bar wp3" style="left:33.333%;width:25.000%"></div></div></div><div class="g-row"><div data-i18n="g.5">Waste reduction practices guide</div><div class="g-track" role="img" data-a="10" data-b="12"><div class="g-bar wp3" style="left:41.667%;width:12.500%"></div></div></div><div class="g-row"><div data-i18n="g.6">Learning mobility for youth workers, Croatia</div><div class="g-track" role="img" data-a="13" data-b="15"><div class="g-bar wp3" style="left:54.167%;width:12.500%"></div></div></div><div class="g-row"><div data-i18n="g.7">App infrastructure and integration</div><div class="g-track" role="img" data-a="12" data-b="16"><div class="g-bar wp4" style="left:50.000%;width:20.833%"></div></div></div><div class="g-row"><div data-i18n="g.8">Interactive recycling map</div><div class="g-track" role="img" data-a="13" data-b="15"><div class="g-bar wp4" style="left:54.167%;width:12.500%"></div></div></div><div class="g-row"><div data-i18n="g.9">Internal online pilot workshop</div><div class="g-track" role="img" data-a="17" data-b="18"><div class="g-bar wp4" style="left:70.833%;width:8.333%"></div></div></div><div class="g-row"><div data-i18n="g.10">Pilot testing event, Poland</div><div class="g-track" role="img" data-a="18" data-b="20"><div class="g-bar wp4" style="left:75.000%;width:12.500%"></div></div></div><div class="g-row"><div data-i18n="g.11">Official app launch</div><div class="g-track" role="img" data-a="20" data-b="21"><div class="g-bar wp4" style="left:83.333%;width:8.333%"></div></div></div><div class="g-row"><div data-i18n="g.12">Website, social media, impact and sustainability plans</div><div class="g-track" role="img" data-a="0" data-b="23"><div class="g-bar wp5" style="left:0.000%;width:100.000%"></div></div></div><div class="g-row"><div data-i18n="g.13">Final local events in Poland, Portugal, Greece and Croatia</div><div class="g-track" role="img" data-a="22" data-b="23"><div class="g-bar wp5" style="left:91.667%;width:8.333%"></div></div></div>
+      </div>
+    </div>
+    <p class="timeline-note" data-i18n="tl.note">Planned dates from the project plan. Each month is one column, from September 2026 to August 2028.</p>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section" id="partners">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="nav.partners">Partners</p>
+      <h2 data-i18n="pt.h2">Five organisations, four countries</h2>
+      <p class="lead" data-i18n="pt.lead">Youth work, rural development, agri-food and community action meet in one partnership.</p>
+    </div>
+    <div class="partners">
+      <article class="partner partner--lead">
+        <span class="where" data-i18n="pt.1.w">Poland · Warsaw · Coordinator</span>
+        <h3>Związek Młodzieży Wiejskiej (ZMW)</h3>
+        <p data-i18n="pt.1.p">One of the oldest and largest youth organisations in Poland. For over 95 years it has worked with young people from rural areas, small towns and semi-urban communities.</p>
+        <p class="role" data-i18n="pt.1.r">Coordinates the project and hosts the pilot testing event in Poland.</p>
+        <a href="http://www.zmw.pl">zmw.pl</a>
+      </article>
+      <article class="partner">
+        <span class="where" data-i18n="pt.2.w">Poland · Miastkowo</span>
+        <h3>The Polish Farm Advisory and Training Centre</h3>
+        <p data-i18n="pt.2.p">A not-for-profit training centre in non-formal education, sustainability, green skills and digital learning solutions.</p>
+        <p class="role" data-i18n="pt.2.r">Leads development of the interactive recycling map.</p>
+        <a href="https://www.farm-advisory.eu">farm-advisory.eu</a>
+      </article>
+      <article class="partner">
+        <span class="where" data-i18n="pt.3.w">Greece · Veroia</span>
+        <h3>Institute for Promotion and Certification of Agri-food Products (iAgroCert)</h3>
+        <p data-i18n="pt.3.p">A non-profit organisation that provides young people with educational material on environment and agriculture.</p>
+        <p class="role" data-i18n="pt.3.r">Leads the app infrastructure and the gamified learning content.</p>
+      </article>
+      <article class="partner">
+        <span class="where" data-i18n="pt.4.w">Portugal · Ovar</span>
+        <h3>Mobiliza-te, Associação de Jovens Voluntários em Ação</h3>
+        <p data-i18n="pt.4.p">A youth association founded in 2020 in Ovar, bringing young volunteers together for social and environmental action.</p>
+        <p class="role" data-i18n="pt.4.r">Leads the action plan, the waste reduction guide and the online presence.</p>
+        <a href="https://www.mobiliza-te.pt">mobiliza-te.pt</a>
+      </article>
+      <article class="partner">
+        <span class="where" data-i18n="pt.5.w">Croatia · Dalj</span>
+        <h3>Centar za mlade Dalj</h3>
+        <p data-i18n="pt.5.p">A youth centre in eastern Croatia where young people from different backgrounds learn, volunteer and take part in community and environmental projects.</p>
+        <p class="role" data-i18n="pt.5.r">Hosts the five-day learning mobility for 25 youth workers.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="funding">
+      <div class="eu"><img src="assets/eu-cofunded.webp" alt="Co-funded by the European Union" data-i18n-attr="alt:a.eu" width="520" height="109"></div>
+      <p class="disclaimer" data-i18n="ft.disclaimer">The views and opinions expressed are solely those of the author(s) only and do not necessarily reflect those of the European Union or Foundation for the Development of the Education System. Neither the European Union nor the Foundation for the Development of the Education System can be held responsible for them.</p>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/pov-logo.webp" alt="POV Circular Cities logo" data-i18n-attr="alt:a.logo.foot" width="440" height="231"></div>
+        <p>POV: Circular Cities. Seeing Urban Recycling Through a New Lens.</p>
+      </div>
+      <div>
+        <h4 data-i18n="ft.project">Project</h4>
+        <ul>
+          <li>Erasmus+ KA220-YOU</li>
+          <li data-i18n="ft.number">Project number 2026-1-PL01-KA220-YOU-000463245</li>
+          <li data-i18n="ft.agency">National Agency: PL01, Foundation for the Development of the Education System</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.explore">Explore</h4>
+        <ul>
+          <li><a href="#challenge" data-i18n="nav.challenge">The challenge</a></li>
+          <li><a href="#app" data-i18n="nav.app">The app</a></li>
+          <li><a href="#timeline" data-i18n="nav.timeline">Timeline</a></li>
+          <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">POV: Circular Cities · 2026–2028</p>
+  </div>
+</footer>
+
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
