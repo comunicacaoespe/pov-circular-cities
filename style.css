@@ -272,6 +272,7 @@ p { margin: 0; }
   .counts { grid-template-columns: 1fr; }
   .objective { grid-template-columns: 56px 1fr; gap: 14px; }
   .objective .tag { font-size: 1.4rem; }
+  .hero-art { margin-top: 36px; }
   .facts dl { grid-template-columns: 1fr; }
   .facts .fact { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
   .facts .fact:first-child { border-top: 0; }
