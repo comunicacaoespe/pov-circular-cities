@@ -109,3 +109,44 @@
   document.addEventListener("povlang", paint);
   paint();
 })();
+
+
+/* Scroll reveal + objectives spy */
+(function () {
+  "use strict";
+  if (!("IntersectionObserver" in window)) return;
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!reduce) {
+    var vh = window.innerHeight;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".section-head, .objective, .partner, .fact, .challenge-copy, .step, .tl-row").forEach(function (el, i) {
+      if (el.getBoundingClientRect().top < vh) return;
+      el.classList.add("reveal");
+      el.style.setProperty("--d", ((i % 3) * 70) + "ms");
+      io.observe(el);
+    });
+  }
+
+  var list = document.querySelector(".objectives");
+  var nodes = document.querySelectorAll(".loop .node");
+  var arc = document.querySelector(".loop-arc");
+  var items = Array.prototype.slice.call(document.querySelectorAll(".objective"));
+  if (!list || !nodes.length || !arc) return;
+  var C = 879.65;
+  function set(k) {
+    list.classList.add("has-spy");
+    items.forEach(function (li, i) { li.classList.toggle("is-active", i === k); });
+    nodes.forEach(function (n, i) {
+      n.classList.toggle("is-on", i <= k);
+      n.classList.toggle("is-active", i === k);
+    });
+    arc.style.strokeDashoffset = String(C * (1 - k / 5));
+  }
+  var spy = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) set(items.indexOf(e.target)); });
+  }, { rootMargin: "-42% 0px -50% 0px" });
+  items.forEach(function (li) { spy.observe(li); });
+})();
