@@ -241,8 +241,6 @@ p { margin: 0; }
 .site-footer { background: var(--ink); color: #DCE9D6; padding: 56px 0 40px; }
 .site-footer a { color: var(--mint); }
 .funding { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; padding-bottom: 32px; border-bottom: 1px solid #2B4435; }
-.eu { padding: 0; }
-.eu img { width: 260px; height: auto; }
 .disclaimer { font-size: 0.84rem; line-height: 1.6; color: #B9CCB3; }
 .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 32px; padding-top: 32px; font-size: 0.92rem; }
 .foot-grid h4 { font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper); margin-bottom: 10px; }
@@ -399,3 +397,21 @@ p { margin: 0; }
   .lang button { width: 26px; height: 19px; }
   .site-header .wrap { flex-wrap: wrap; }
 }
+
+
+/* EU emblem + funding statement (official flag colours; statement in Arial, Reflex Blue or white) */
+.eu-badge { display: inline-flex; align-items: center; gap: 14px; }
+.eu-flag { width: 63px; height: 42px; flex: none; display: block; }
+.eu-text { font-family: Arial, "Segoe UI", Helvetica, sans-serif; font-size: 1.12rem; line-height: 1.2; color: #003399; max-width: 15em; }
+.hero-eu { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); }
+.eu-badge--lg .eu-flag { width: 96px; height: 64px; }
+.eu-badge--lg .eu-text { font-size: 1.5rem; }
+.eu-badge--dark .eu-text { color: #fff; }
+.eu-badge--dark .eu-flag { outline: 1px solid rgba(255,255,255,.35); }
+
+/* Privacy note */
+.privacy { margin-top: 20px; font-size: 0.88rem; color: #B8CDB0; }
+.privacy summary { cursor: pointer; width: fit-content; color: var(--mint); font-weight: 500; }
+.privacy summary:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; }
+.privacy p { margin: 10px 0 0; max-width: 70ch; }
+@media (max-width: 720px) { .eu-badge--lg .eu-flag { width: 72px; height: 48px; } .eu-badge--lg .eu-text { font-size: 1.2rem; } }
