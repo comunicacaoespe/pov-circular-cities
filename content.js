@@ -22,6 +22,9 @@
     list.hidden = false;
     items.forEach(function (n) {
       var a = el("article", "news-card");
+      if (n.image && /^[a-f0-9]{16}\.(webp|jpg)$/.test(n.image)) {
+        var im = el("img", "news-img"); im.src = "uploads/" + n.image; im.alt = pick(n.alt); im.loading = "lazy"; a.appendChild(im);
+      }
       var t = el("time", "news-date", fmt(n.date)); t.setAttribute("datetime", n.date); a.appendChild(t);
       a.appendChild(el("h3", "", pick(n.title)));
       pick(n.text).split(/\n\s*\n/).forEach(function (p) { if (p.trim()) a.appendChild(el("p", "", p.trim())); });
