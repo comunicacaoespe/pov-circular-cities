@@ -411,3 +411,19 @@ p { margin: 0; }
 .privacy summary:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; }
 .privacy p { margin: 10px 0 0; max-width: 70ch; }
 @media (max-width: 720px) { .eu-badge--lg .eu-img { height: 72px; } .eu-img { height: 56px; } }
+
+
+/* Footer licence */
+.licence { grid-column: 1 / -1; display: flex; gap: 22px; align-items: center; padding-top: 24px; border-top: 1px solid #2B4435; font-size: 0.84rem; line-height: 1.6; color: #B9CCB3; }
+.licence p { margin: 0; max-width: 80ch; }
+.licence a { color: var(--mint); overflow-wrap: anywhere; }
+.cc-logo { flex: none; display: block; line-height: 0; border-radius: 4px; }
+.cc-logo img { display: block; width: 120px; height: auto; }
+.cc-logo:focus-visible, .licence a:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; }
+@media (max-width: 720px) { .licence { flex-direction: column; align-items: flex-start; } }
+
+/* News (empty state) */
+.news-empty { display: flex; gap: 22px; align-items: center; padding: 34px 36px; border: 1px dashed #B8CFAE; border-radius: 20px; background: var(--sand); color: var(--green-deep); max-width: 760px; }
+.news-empty svg { width: 52px; height: 52px; flex: none; }
+.news-empty p { margin: 0; color: var(--ink); font-size: 1.05rem; max-width: 52ch; }
+@media (max-width: 720px) { .news-empty { flex-direction: column; align-items: flex-start; padding: 26px; } }
